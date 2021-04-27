@@ -41,6 +41,7 @@ router.get('/creates/:id', async (req, res) => {
     const create = createData.get({ plain: true });
 
     res.render('create', {
+      //grabs all the properties that are in create
       ...create,
       logged_in: req.session.logged_in
     });
