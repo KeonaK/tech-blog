@@ -1,22 +1,29 @@
 <h3>Dashboard</h3>
 
+<div class="text-center">
+    <h2>{{title}}</h2>
+    <p>{{description}}</p>
+    <p>Posted by {{user.name}} on {{format_date date_created}}</p>
+    <p></p>
+</div>
 
 <form class="form new-create-form">
     <h5>Edit Post</h5>
     <div class="form-group">
-        <label for="project-name">Title:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
+        <label for="create-name">Title:</label>
+        <input class="form-input" type="text" id="create-name" name="create-name" value="{{title}}" />
     </div>
     <div class="form-group">
-        <label for="project-desc">Content:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <label for="create-desc">Content:</label>
+        <textarea class="form-input" id="create-desc" name="create-desc">{{description}}</textarea>
     </div>
     <div class="form-group">
-        <button type="submit" class="btn btn-primary">Update Post</button>
-        <button type="submit" class="btn btn-primary">Delete</button>
+        <button type="submit" class="btn btn-primary" data-id="{{create.id}}>Update Post</button>
+        <button class=" btn btn-sm btn-danger" data-id="{{create.id}}">DELETE</button>
+    </div>
     </div>
 </form>
 </div>
 
 
-<script src="./js/dashboard.js"></script>
+<script src="./js/update.js"></script>
