@@ -1,10 +1,14 @@
 <div class="text-center">
-  <h2>{{name}}</h2>
-  <p>{{{get_emoji}}}</p>
-  <p>{{description}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-
-  <p>
-    <button class="btn btn-primary">Fund this Project!</button>
-  </p>
+    <h2>{{title}}</h2>
+    <p>Posted by {{user.name}} on {{format_date date_created}}</p>
+    <p>{{description}}</p>
+    <p></p>
 </div>
+
+<form>
+    <div>
+        <label for="comments">Comment:</label>
+        <input class="form-input" type="text" />
+        <button class="btn btn-primary">submit</button>
+    </div>
+</form>
