@@ -22,7 +22,7 @@ This project is a CMS style blog where developers can publish their blog posts a
 
 ## Heroku
 
-https://git.heroku.com/tech-blog-project.git
+https://tech-blog-project.herokuapp.com/
 
 ## Installation
 
